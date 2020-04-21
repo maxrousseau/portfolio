@@ -1,0 +1,112 @@
+html{
+	background-image: url(../media/dot-grid.png);
+	background-repeat: repeat;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px,auto);
+  grid-template-areas:
+	"tp tp tp tp tp"
+	".  .  bu . . "
+	".  cv  cv cv . "
+	".  cv  cv cv . "
+	"bt bt bt bt bt";
+  grid-gap: 10px;
+  align-content: center;
+}
+
+#top{
+  grid-area: tp;
+  display: cvock;
+}
+
+#bottom{
+  grid-area: bt;
+}
+
+#cv{
+	grid-area: cv;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+#txt-ln{
+	text-align: left;
+	text-decoration: none;
+	color: #81A2BE;
+  font: italic 2em "Helvetica Sans", serif;
+}
+
+#ls-txt{
+	padding-top: 1em;
+	list-style-type: none;
+	text-align: left;
+	color: #535353;
+	font: italic 1em "Helvetica Sans", serif;
+}
+
+#small-txt-ln{
+	text-decoration: none;
+	color: #81A2BE;
+}
+
+ul li{
+	padding: 5px;
+}
+
+#h1-txt{
+	text-decoration: none;
+	text-align: right;
+	color: #535353;
+  font: italic 1.7em "Helvetica Sans", serif;
+}
+
+#buttons{
+  grid-area: bu;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  animation-name: fadein;
+  animation-duration: 2s;
+	justify-items: center;
+	align-items: center;
+}
+
+@keyframes fadein{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes colchange{
+  0% {background-color: #B294BB;}
+	50% {background-color: #81A2BE;}
+  100% {background-color: #B294BB;}
+}
+
+
+a:link.icon {
+  border: None;
+  line-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: #81A2BE;
+  font-size: 1em;
+  animation-name: colchange;
+  animation-duration: 4s;
+	animation-iteration-count: infinite;
+	display: cvock;
+	text-align: center;
+}
+
+.icon:hover{
+  opacity: 0.8;
+}
