@@ -1,48 +1,33 @@
+.wrapper {
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(65ch, 100%)
+    1fr;
+}
+.wrapper > * {
+  grid-column: 2;
+}
+.full-bleed {
+  width: 100%;
+  grid-column: 1 / 4;
+}
+
+/*eyecandy --------------------------------------------------*/
 html{
 	background-image: url(./media/dot-grid.png);
 	background-repeat: repeat;
 }
 
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-	text-align: center;
-}
-
-#wrapper{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: minmax(50px,auto);
-  grid-template-areas:
-	"tp tp tp tp tp"
-	".  im im im . "
-	".  .  bu . . "
-	".  gr  gr gr . "
-	"bt bt bt bt bt";
-  grid-gap: 10px;
-  align-content: center;
-}
-
-#top{
-  grid-area: tp;
-  display: block;
-}
-
-#bottom{
-  grid-area: bt;
-}
-
 #greeting{
-  grid-area: gr;
-  font: italic bold 2em "Fira Sans", serif;
+	font: italic 1.7em "Helvetica Sans", serif;
 	color: #535353;
   animation-name: fadein;
   animation-duration: 2s;
 }
 
 #image{
-  grid-area: im;
+	justify: center;
 }
 
 #srcimg{
@@ -52,17 +37,6 @@ html{
 
 #srcimg:hover{
   opacity: 0.8;
-}
-
-#buttons{
-  grid-area: bu;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  animation-name: fadein;
-  animation-duration: 2s;
-	justify-items: center;
-	align-items: center;
 }
 
 @keyframes fadein{
@@ -76,22 +50,47 @@ html{
   100% {background-color: #B294BB;}
 }
 
-
-a:link.icon {
-  border: None;
-  line-height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  text-decoration: none;
-  background-color: #81A2BE;
-  font-size: 1em;
-  animation-name: colchange;
-  animation-duration: 4s;
-	animation-iteration-count: infinite;
-	display: block;
-	text-align: center;
+hr {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  margin-left: 0;
+  margin-right: 0;
+  border-style: inset;
+  border-width: 1px;
 }
 
-.icon:hover{
-  opacity: 0.8;
+#txt-ln{
+
+	text-align: left;
+	text-decoration: none;
+	color: #81A2BE;
+}
+
+#ls-txt{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	list-style-type: square;
+	text-align: left;
+	color: #535353;
+}
+
+#small-txt-ln{
+	text-decoration: none;
+	color: #81A2BE;
+}
+
+p{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #535353;
+	text-align: justify;
+}
+
+#h1-txt{
+	text-decoration: none;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	color: #535353;
+	font: italic 1.7em "Helvetica Sans", serif;
 }

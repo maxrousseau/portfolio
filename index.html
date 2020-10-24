@@ -3,43 +3,73 @@
 
 <head>
 <meta charset="utf-8"/>
-<title>home</title>
-<link  href="index.css" rel="stylesheet" type="text/css" >
+<title>Maxime Rousseau</title>
+<link  href="./index.css" rel="stylesheet" type="text/css" >
 </head>
 
-<body>
-<div id="wrapper">
+<main class="wrapper">
+  
+  <center>
+	<h1 id="greeting">Hello there, I'm Maxime Rousseau</h1>
+	<img src='./media/me.png' id="srcimg" width="300" alt='mafoto' />
+  </center>
+  
+  <h1 id='h1-txt'>About</h1>
+  <hr>
+  <p>
+	My name is Maxime Rousseau, I am a dentist doing a residency at the Montreal
+	Children's Hospital. I graduated as a DMD from McGill University in 2020. Over the
+	past few years I developed a passion for scientific research and
+	programming. My interests lie in how to leverage machine learning and other
+	computational methods in dentistry. I have a few publications and active
+	projects, they are listed below.
+  </p>
 
-<div id="top"></div>
 
-<!-- homeboi's face -->
-<div id="image">
-	<img src='./media/me.png' id="srcimg" width="400" alt='mafoto' />
-</div>
+  <h1 id='h1-txt'>Publications</h1>
+  <hr>
+  <p>
+	<ul id='ls-txt'>
+	  <li>Rousseau M, Retrouvey J, Members of the Brittle Bone Disease Consortium.
+		2018. Osteogenesis imperfecta: potential therapeutic approaches. PeerJ 6:e5464
+		<a href='https://doi.org/10.7717/peerj.5464'
+		   id='small-txt-ln'>https://doi.org/10.7717/peerj.5464</a>
+	  </li> 
+	  <li>Rousseau et al., (2018). pfla: A Python Package for Dental Facial
+		Analysis using Computer Vision and Statistical Shape Analysis. Journal
+		of Open Source Software, 3(32),
+		855, <a href='https://doi.org/10.21105/joss.00855' id='small-txt-ln'>
+		  https://doi.org/10.21105/joss.00855</a>
+	  </li>
+	</ul>
+  </p>
 
-<!-- buttons that you can click on -->
-<div id="buttons">
 
-	<a class="icon" href='./pages/about.html'>
-		<span role="img" aria-label="sheet">🦷</span>
-	</a>
+  <h1 id='h1-txt'>Projects</h1>
+  <hr>
+  <p>
+	<ul id='ls-txt'>
+	  <li><a href='https://github.com/maxrousseau/pfla'
+	  id='small-txt-ln'>pfla</a>: Python Facial Landmark Analysis, A python
+	  package for facial analysis of images.
+	  </li>
+	  <li><a href='http://www.densys.org/' id='small-txt-ln'>densys.org</a>
+	  Densys aims at bringing machine learning technologies to the researcher
+		and clinicians in the various dental and medical fields.
+	  </li>
+	</ul>  
+  </p>
 
-	<a class="icon" href='./pages/cv.html'>
-		<span role="img" aria-label="sheet">📃</span>
-	</a>
 
-	<a class="icon" href='./pages/contact.html'>
-		<span role="img" aria-label="sheet">📮</span>
-	</a>
-</div>
-
-<!-- be polite, say hi -->
-<div id="greeting">
-	<h1>Hello there, I'm Maxime Rousseau</h1>
-</div>
-
-<div id="bottom"></div>
-</div>
-</body>
+  <h1 id='h1-txt'>Contact</h1>
+  <hr>
+  <p>
+	<ul id='ls-txt'>
+	  <li> Email: <a href='mailto: maximerousseau08@gmail.com' id='small-txt-ln'>maximerousseau08@gmail.com</a></li>
+	  <li> Github: <a href='https://github.com/maxrousseau' id='small-txt-ln'>https://github.com/maxrousseau</a></li>
+	</ul>
+  </p>
+  
+</main>
 
 </html>
