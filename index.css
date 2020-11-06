@@ -14,10 +14,7 @@
 }
 
 /*eyecandy --------------------------------------------------*/
-html{
-	background-image: url(./media/dot-grid.png);
-	background-repeat: repeat;
-}
+
 
 #greeting{
 	font: italic 1.7em "Helvetica Sans", serif;
