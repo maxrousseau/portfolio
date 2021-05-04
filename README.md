@@ -1,4 +1,3 @@
-[personal website](https://maximerousseau.readthedocs.io/en/latest/)
+personal website, single file html
 
 
-[![Documentation Status](https://readthedocs.org/projects/maximerousseau/badge/?version=latest)](https://maximerousseau.readthedocs.io/en/latest/?badge=latest)
